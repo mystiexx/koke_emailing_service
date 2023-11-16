@@ -1,4 +1,3 @@
-require('dotenv').config();
 const AppServer = require('./util/appServer');
 const apiRoutes = require('./routes/api');
 

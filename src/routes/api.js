@@ -29,11 +29,18 @@ router.post('/send-email', async (req, res) => {
       to: send_to,
       html: template(templateData),
     });
+
+    res.status(OK).json({
+      data: {},
+      message: 'Email sent',
+      status: OK,
+    });
   } catch (error) {
     console.log('error sending email: ', error);
     res.status(INTERNAL_SERVER_ERROR).json({
       data: null,
-      error: error,
+      message: error,
+      status: INTERNAL_SERVER_ERROR,
     });
   }
 });
