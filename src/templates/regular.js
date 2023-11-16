@@ -46,8 +46,10 @@ module.exports = `<!DOCTYPE html>
         </td>
       </tr>
       <tr>
-        <td style="display: grid; place-items: center; margin-top: 40px">
-          <p style="font-size: 12px">With ❤️ from koke empire time</p>
+        <td style="margin-top: 40px">
+          <p style="font-size: 12px; text-align: center">
+            With ❤️ from koke empire time
+          </p>
         </td>
       </tr>
     </table>

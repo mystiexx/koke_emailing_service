@@ -20,7 +20,7 @@ router.post('/send-email', async (req, res) => {
 
   let template = compile(regularTemplate);
 
-  if (templateType === 'regular') {
+  if (templateType === 'Regular') {
     template = compile(regularTemplate);
   }
 
