@@ -10,7 +10,6 @@ class EmailService {
       pass: process.env.TRANSPORT_PASSWORD, // Your email password or app-specific password
     };
 
-    console.log('AUTH: ', auth);
     this.transporter = nodemailer.createTransport({
       service: 'gmail', // You can use other services or SMTP details here
       auth,
