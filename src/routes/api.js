@@ -1,7 +1,7 @@
 const express = require('express');
 const MailingService = require('../util/mailer');
 const { StatusCodes } = require('http-status-codes');
-const helloWorldTemplate = require('../templates/helloWorld');
+const regularTemplate = require('../templates/regular');
 const { compile } = require('handlebars');
 
 const { OK, INTERNAL_SERVER_ERROR } = StatusCodes;
@@ -18,10 +18,10 @@ router.post('/send-email', async (req, res) => {
     },
   } = req.body;
 
-  let template = compile(helloWorldTemplate);
+  let template = compile(regularTemplate);
 
-  if (templateType === 'HELLO_WORLD') {
-    template = compile(helloWorldTemplate);
+  if (templateType === 'regular') {
+    template = compile(regularTemplate);
   }
 
   try {
