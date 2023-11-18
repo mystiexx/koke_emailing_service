@@ -5,6 +5,7 @@ const regularTemplate = require("../templates/regular");
 const vipTemplate = require("../templates/vip");
 const trybeTemplate = require("../templates/trybe");
 const vendorTemplate = require("../templates/vendor");
+const ticketSold = require('../templates/ticketSold')
 const { compile } = require("handlebars");
 
 const { OK, INTERNAL_SERVER_ERROR } = StatusCodes;
@@ -31,6 +32,8 @@ router.post("/send-email", async (req, res) => {
     template = compile(trybeTemplate);
   } else if (templateType === "Vendor") {
     template = compile(vendorTemplate);
+  } else if (templateType === 'ticketSold') {
+    template = compile(ticketSold)
   }
 
   try {
