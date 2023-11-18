@@ -29,9 +29,8 @@ module.exports =`
         <td>
           <p style="font-size: 16px; margin-top: 24px">Dear Admin,</p>
           <p style="font-size: 16px">
-        
-            I hope this message finds you bursting with excitement.   I am {{fullname}} and I just
-            bought the {{ticket}} ticket!
+            I hope this message finds you bursting with excitement. I am {{fullname}} and I just
+            bought {{quantity}} {{ticket}} ticket!
           </p>
         </td>
       </tr>
