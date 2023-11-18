@@ -16,6 +16,7 @@ router.post("/send-email", async (req, res) => {
   const mailingService = new MailingService();
   const {
     templateType,
+    subject,
     send_to = "aloneroland@gmail.com",
     templateData = {
       fullName: "Enola Roland",
@@ -39,6 +40,7 @@ router.post("/send-email", async (req, res) => {
   try {
     await mailingService.sendMail({
       to: send_to,
+      subject,
       html: template(templateData),
     });
 
