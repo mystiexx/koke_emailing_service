@@ -16,7 +16,7 @@ class EmailService {
     });
   }
 
-  async sendMail({ to, subject = 'Hello World', html }) {
+  async sendMail({ to, subject = 'KOKE XPERIENCE TICKET', html }) {
     const mailOptions = {
       from: 'kokeempirenigeria@gmail.com', // Sender's email address
       to, // Recipient's email address
