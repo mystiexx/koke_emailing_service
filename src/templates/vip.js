@@ -49,7 +49,7 @@ module.exports = `
       <tr>
         <td style="margin-top: 40px">
           <p style="font-size: 12px; text-align: center">
-            With ❤️ from koke empire time
+            With ❤️ from koke empire team
           </p>
         </td>
       </tr>
